@@ -4,6 +4,9 @@ using System;
 using AuthProviders;
 using Microsoft.Extensions.Configuration;
 
+/// <summary>
+/// Provides extension methods for configuring token-based authentication with HashiCorp Vault in configuration builders.
+/// </summary>
 public static class VaultSecretTokenAuthConfigurationExtensions
 {
 	/// <summary>
@@ -15,7 +18,7 @@ public static class VaultSecretTokenAuthConfigurationExtensions
 	/// <exception cref="InvalidOperationException">Thrown when the builder is not of the expected VaultConfiguration type.</exception>
 	public static IConfigurationBuilder UseTokenAuth(this IVaultSecretConfigurationBuilder builder, string token)
 	{
-		if (builder is not VaultSecretSecretConfigurationBuilder configuration)
+		if (builder is not VaultSecretConfigurationBuilder configuration)
 		{
 			throw new InvalidOperationException();
 		}

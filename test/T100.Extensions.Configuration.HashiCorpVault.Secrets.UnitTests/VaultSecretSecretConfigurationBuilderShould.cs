@@ -18,7 +18,7 @@ public class VaultSecretSecretConfigurationBuilderShould
         var mockBuilder = new ConfigurationBuilder();
 
         // Act
-        var builder = new VaultSecretSecretConfigurationBuilder(mockBuilder, VaultHost, MountPoint, Prefix, [SecretPath1,SecretPath2]);
+        var builder = new VaultSecretConfigurationBuilder(mockBuilder, VaultHost, MountPoint, Prefix, [SecretPath1,SecretPath2]);
 
         // Assert
         builder.VaultHost.Should().Be(VaultHost);
@@ -34,7 +34,7 @@ public class VaultSecretSecretConfigurationBuilderShould
         var mockBuilder = new ConfigurationBuilder();
 
         // Act
-        var builder = new VaultSecretSecretConfigurationBuilder(
+        var builder = new VaultSecretConfigurationBuilder(
             mockBuilder,
             VaultHost,
             MountPoint,

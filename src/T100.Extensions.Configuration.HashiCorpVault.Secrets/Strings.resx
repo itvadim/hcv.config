@@ -24,4 +24,7 @@
     <data name="VaultSecretsDownloadError" xml:space="preserve">
         <value>Error loading secrets from the Vault: {0}</value>
     </data>
+    <data name="CertificateNotFound" xml:space="preserve">
+        <value>Certificate with thumbprint '{0}' not found in store '{1}\{2}'.</value>
+    </data>
 </root>

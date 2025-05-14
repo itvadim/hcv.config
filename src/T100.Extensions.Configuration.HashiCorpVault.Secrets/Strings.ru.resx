@@ -17,4 +17,7 @@
     <data name="VaultSecretsDownloadError" xml:space="preserve">
         <value>Ошибка при загрузке секретов из Vault:  {0}</value>
     </data>
+    <data name="CertificateNotFound" xml:space="preserve">
+        <value>Сертификат с отпечатком '{0}' не найден в хранилище '{1}\{2}'.</value>
+    </data>
 </root>

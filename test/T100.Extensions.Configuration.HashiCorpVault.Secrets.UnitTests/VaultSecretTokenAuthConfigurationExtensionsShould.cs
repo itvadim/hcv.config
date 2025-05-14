@@ -19,7 +19,7 @@ public class VaultSecretTokenAuthConfigurationExtensionsShould
         
         configurationBuilderMock.Setup(x => x.Add(It.IsAny<VaultSecretConfigurationSource>())).Returns(configurationBuilderMock.Object);
         
-        var builder = new VaultSecretSecretConfigurationBuilder
+        var builder = new VaultSecretConfigurationBuilder
         (
             configurationBuilderMock.Object,
             VaultHost,
@@ -57,7 +57,7 @@ public class VaultSecretTokenAuthConfigurationExtensionsShould
     {
         // Arrange
         var configurationBuilderMock = new Mock<IConfigurationBuilder>();
-        var builder = new VaultSecretSecretConfigurationBuilder
+        var builder = new VaultSecretConfigurationBuilder
         (
             configurationBuilderMock.Object,
             VaultHost,

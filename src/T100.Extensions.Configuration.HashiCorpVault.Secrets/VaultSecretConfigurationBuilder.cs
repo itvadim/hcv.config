@@ -9,7 +9,7 @@ using Microsoft.Extensions.Configuration;
 /// secret paths, and other optional settings required for integrating with
 /// HashiCorp Vault.
 /// </summary>
-public class VaultSecretSecretConfigurationBuilder
+public class VaultSecretConfigurationBuilder
 (
 	IConfigurationBuilder builder,
 	string host,

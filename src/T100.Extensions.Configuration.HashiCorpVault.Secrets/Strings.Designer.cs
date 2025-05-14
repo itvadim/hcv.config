@@ -60,6 +60,15 @@ namespace T100.Extensions.Configuration.HashiCorpVault.Secrets {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Certificate with thumbprint &apos;{0}&apos; not found in store &apos;{1}\{2}&apos;..
+        /// </summary>
+        internal static string CertificateNotFound {
+            get {
+                return ResourceManager.GetString("CertificateNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Error loading secrets from the Vault: {0}.
         /// </summary>
         internal static string VaultSecretsDownloadError {

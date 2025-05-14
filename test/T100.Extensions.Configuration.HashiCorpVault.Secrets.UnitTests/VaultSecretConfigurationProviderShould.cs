@@ -35,7 +35,7 @@ public class VaultSecretConfigurationProviderShould
 		);
 
 		// Act
-		Action act = () => new VaultSecretConfigurationProvider(null, source, new VaultSecretConfigurationOptional());
+		Action act = () => new VaultSecretConfigurationProvider(null!, source, new VaultSecretConfigurationOptional());
 
 		// Assert
 		act.Should().Throw<ArgumentNullException>().WithMessage("*vaultClient*");
@@ -48,7 +48,7 @@ public class VaultSecretConfigurationProviderShould
 		Action act = () => new VaultSecretConfigurationProvider
 		(
 			_vaultClientMock.Object,
-			null, 
+			null!, 
 			new VaultSecretConfigurationOptional()
 		);
 
@@ -71,7 +71,7 @@ public class VaultSecretConfigurationProviderShould
 		);
 
 		// Act
-		Action act = () => new VaultSecretConfigurationProvider(_vaultClientMock.Object, source, null);
+		Action act = () => new VaultSecretConfigurationProvider(_vaultClientMock.Object, source, null!);
 
 		// Assert
 		act.Should().Throw<ArgumentNullException>().WithMessage("*optional*");

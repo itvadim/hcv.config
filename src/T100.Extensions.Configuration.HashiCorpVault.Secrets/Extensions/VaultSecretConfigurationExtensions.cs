@@ -39,5 +39,5 @@ public static class VaultSecretConfigurationExtensions
 		string mountPoint,
 		string prefix,
 		params string[] secretPath
-	) => new VaultSecretSecretConfigurationBuilder(builder, vaultHost, mountPoint, prefix, secretPath);
+	) => new VaultSecretConfigurationBuilder(builder, vaultHost, mountPoint, prefix, secretPath);
 }
