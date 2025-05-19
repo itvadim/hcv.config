@@ -1,6 +1,5 @@
 ﻿namespace T100.Extensions.Configuration.HashiCorpVault.Secrets.UnitTests;
 
-using Extensions;
 using Microsoft.Extensions.Configuration;
 using Moq;
 

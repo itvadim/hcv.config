@@ -1,13 +1,10 @@
-﻿namespace T100.Extensions.Configuration.HashiCorpVault.Secrets.Extensions;
+﻿namespace T100.Extensions.Configuration.HashiCorpVault.Secrets;
 
 using System;
 using AuthProviders;
 using Microsoft.Extensions.Configuration;
 
-/// <summary>
-/// Provides extension methods for configuring token-based authentication with HashiCorp Vault in configuration builders.
-/// </summary>
-public static class VaultSecretTokenAuthConfigurationExtensions
+public static partial class VaultSecretConfigurationExtensions
 {
 	/// <summary>
 	/// Configures the use of token-based authentication for HashiCorp Vault in the provided configuration builder.

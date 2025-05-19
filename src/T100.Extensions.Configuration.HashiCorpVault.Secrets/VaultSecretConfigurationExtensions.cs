@@ -1,11 +1,11 @@
-﻿namespace T100.Extensions.Configuration.HashiCorpVault.Secrets.Extensions;
+﻿namespace T100.Extensions.Configuration.HashiCorpVault.Secrets;
 
 using Microsoft.Extensions.Configuration;
 
 /// <summary>
 /// Provides extension methods for integrating HashiCorp Vault secrets with the Microsoft.Extensions.Configuration system.
 /// </summary>
-public static class VaultSecretConfigurationExtensions
+public static partial class VaultSecretConfigurationExtensions
 {
 	/// <summary>
 	/// Adds HashiCorp Vault secrets to the configuration builder using the specified vault host, mount point, and secret paths.

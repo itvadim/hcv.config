@@ -2,7 +2,6 @@
 
 using System.Security.Cryptography.X509Certificates;
 using AuthProviders;
-using Extensions;
 using Microsoft.Extensions.Configuration;
 using Moq;
 

@@ -1,4 +1,4 @@
-﻿namespace T100.Extensions.Configuration.HashiCorpVault.Secrets.Extensions;
+﻿namespace T100.Extensions.Configuration.HashiCorpVault.Secrets;
 
 using System;
 using System.Linq;
@@ -6,10 +6,7 @@ using System.Security.Cryptography.X509Certificates;
 using AuthProviders;
 using Microsoft.Extensions.Configuration;
 
-/// <summary>
-/// Provides extension methods for configuring Vault secret authentication using certificates.
-/// </summary>
-public static class VaultSecretCertificateAuthConfigurationExtensions
+public static partial class VaultSecretConfigurationExtensions
 {
 	/// <summary>
 	/// Configures the Vault secret configuration to use certificate authentication.
