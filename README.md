@@ -1,5 +1,6 @@
 ﻿# T100.Extensions.Configuration.HashiCorpVault.Secrets
-![NuGet Version](https://img.shields.io/nuget/v/T100.Extensions.Configuration.HashiCorpVault.Secrets?style=flat)
+
+[![NuGet Version](https://img.shields.io/nuget/v/T100.Extensions.Configuration.HashiCorpVault.Secrets?style=flat)](https://www.nuget.org/packages/T100.Extensions.Configuration.HashiCorpVault.Secrets)
 
 `T100.Extensions.Configuration.HashiCorpVault.Secrets` is a .NET library provides seamless integration with
 HashiCorp Vault for .NET configuration system, allowing secure retrieval of application secrets.
